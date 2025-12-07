@@ -16,7 +16,7 @@ const HeroSection = () => {
   const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
   const scale = useTransform(scrollYProgress, [0, 0.5], [1, 0.9]);
 
-  const title = "Hackathon Name";
+  const title = "GDG InnovateX";
 
   return (
     <section
@@ -95,7 +95,7 @@ const HeroSection = () => {
                 <Sparkles className="w-4 h-4 text-primary" />
               </motion.span>
               <span className="text-sm font-medium text-foreground/80">
-                Powered by Google Technologies
+                GDG on Campus IIIT Kalyani
               </span>
             </motion.div>
           </motion.div>
@@ -105,24 +105,24 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.8 }}
-            className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight"
+            className="font-display flex flex-col text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight"
           >
-            <span className="gradient-text">{title}</span>
-            <br />
+            <span className="gradient-text mb-10">{title}</span>
+            {/* <br /> */}
             <motion.span
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.5, duration: 0.6 }}
-              className="text-foreground text-4xl sm:text-5xl md:text-6xl lg:text-7xl"
+              className="text-foreground text-3xl sm:text-4xl md:text-5xl lg:text-6xl"
             >
               Build the Future with
             </motion.span>
-            <br />
+            {/* <br /> */}
             <motion.span
               initial={{ opacity: 0, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.7, duration: 0.5, type: "spring", stiffness: 200 }}
-              className="gradient-text-accent inline-block"
+              className="gradient-text-accent inline-block text-3xl sm:text-4xl md:text-5xl lg:text-8xl h-fit"
             >
               Google Tech
             </motion.span>
@@ -133,7 +133,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6 }}
-            className="text-lg md:text-xl lg:text-2xl text-muted-foreground max-w-3xl mx-auto mb-10"
+            className="text-lg md:text-xl lg:text-xl text-muted-foreground max-w-2xl mx-auto mb-10"
           >
             Solve real-world problems through innovation, collaboration, and
             cutting-edge technology.
@@ -149,7 +149,7 @@ const HeroSection = () => {
             <motion.div whileHover={{ scale: 1.05, y: -2 }} whileTap={{ scale: 0.98 }}>
               <Button variant="hero" size="xl" className="group relative overflow-hidden">
                 <span className="relative z-10 flex items-center gap-2">
-                  Register Now
+                  <a href="https://vision.hack2skill.com/event/gdgoc-25-innovatex">Register Now</a>
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </span>
               </Button>
@@ -157,7 +157,7 @@ const HeroSection = () => {
             <motion.div whileHover={{ scale: 1.05, y: -2 }} whileTap={{ scale: 0.98 }}>
               <Button variant="hero-outline" size="xl" className="group">
                 <Users className="w-5 h-5 group-hover:rotate-12 transition-transform" />
-                Join Community Events
+                <a href="#events">Join Community Events</a>
               </Button>
             </motion.div>
           </motion.div>

@@ -121,7 +121,7 @@ const Navbar = () => {
               </div>
             </motion.div>
             <span className="font-display font-bold text-xl hidden sm:block">
-              <span className="gradient-text">Hackathon</span>
+              <span className="gradient-text">GDG InnovateX</span>
             </span>
           </motion.a>
 
@@ -165,7 +165,7 @@ const Navbar = () => {
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <Button variant="hero" size="lg" className="group">
                 <span className="relative z-10 flex items-center gap-2">
-                  Register Now
+                  <a href="https://vision.hack2skill.com/event/gdgoc-25-innovatex">Register Now</a>
                   <Sparkles className="w-4 h-4 group-hover:rotate-12 transition-transform" />
                 </span>
               </Button>

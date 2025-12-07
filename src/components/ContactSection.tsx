@@ -8,10 +8,10 @@ const ContactSection = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   const socialLinks = [
-    { icon: Twitter, label: "Twitter", href: "#" },
-    { icon: Linkedin, label: "LinkedIn", href: "#" },
-    { icon: Instagram, label: "Instagram", href: "#" },
-    { icon: Youtube, label: "YouTube", href: "#" },
+    { icon: Twitter, label: "Twitter", href: "https://x.com/gdsciiitkalyani" },
+    { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/company/gdsc-iiit-kalyani" },
+    { icon: Instagram, label: "Instagram", href: "https://www.instagram.com/gdgiiitkalyani/" },
+    { icon: Youtube, label: "YouTube", href: "https://www.youtube.com/@gdgiiitkalyani" },
   ];
 
   return (
@@ -35,9 +35,9 @@ const ContactSection = () => {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-12">
+        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto mb-12">
           <motion.a
-            href="mailto:contact@hackathon.com"
+            href="mailto:dsc.iiitkalyani@gmail.com"
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5, delay: 0.1 }}
@@ -47,11 +47,11 @@ const ContactSection = () => {
               <Mail className="w-7 h-7 text-primary" />
             </div>
             <h3 className="font-display font-bold mb-1">Email Us</h3>
-            <p className="text-sm text-muted-foreground">contact@hackathon.com</p>
+            <p className="text-sm text-muted-foreground">dsc.iiitkalyani@gmail.com</p>
           </motion.a>
 
           <motion.a
-            href="#"
+            href="https://discord.gg/BP6rPGfujM"
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5, delay: 0.2 }}
@@ -64,7 +64,7 @@ const ContactSection = () => {
             <p className="text-sm text-muted-foreground">Join our community</p>
           </motion.a>
 
-          <motion.a
+          {/* <motion.a
             href="#"
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -76,7 +76,7 @@ const ContactSection = () => {
             </div>
             <h3 className="font-display font-bold mb-1">WhatsApp</h3>
             <p className="text-sm text-muted-foreground">Quick support</p>
-          </motion.a>
+          </motion.a> */}
         </div>
 
         {/* Social Links */}

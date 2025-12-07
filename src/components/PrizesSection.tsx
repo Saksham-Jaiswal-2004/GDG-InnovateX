@@ -8,15 +8,6 @@ const PrizesSection = () => {
 
   const prizes = [
     {
-      position: "Winner",
-      prize: "₹50,000",
-      icon: Trophy,
-      gradient: "from-yellow-300 via-amber-400 to-yellow-500",
-      glow: "shadow-[0_0_60px_10px_rgba(251,191,36,0.3)]",
-      extras: ["Google Swag Kit", "Mentorship Program", "Certificate of Excellence"],
-      scale: true,
-    },
-    {
       position: "1st Runner-up",
       prize: "₹30,000",
       icon: Medal,
@@ -24,6 +15,15 @@ const PrizesSection = () => {
       glow: "shadow-[0_0_40px_5px_rgba(156,163,175,0.3)]",
       extras: ["Google Swag Kit", "Career Guidance", "Certificate"],
       scale: false,
+    },
+    {
+      position: "Winner",
+      prize: "₹50,000",
+      icon: Trophy,
+      gradient: "from-yellow-300 via-amber-400 to-yellow-500",
+      glow: "shadow-[0_0_60px_10px_rgba(251,191,36,0.3)]",
+      extras: ["Google Swag Kit", "Mentorship Program", "Certificate of Excellence"],
+      scale: true,
     },
     {
       position: "2nd Runner-up",
@@ -196,19 +196,21 @@ const PrizesSection = () => {
                   {prize.prize}
                 </motion.p>
 
-                <div className="space-y-3">
-                  {prize.extras.map((extra, extraIndex) => (
-                    <motion.div
-                      key={extra}
-                      initial={{ opacity: 0, x: -20 }}
-                      animate={isInView ? { opacity: 1, x: 0 } : {}}
-                      transition={{ delay: 0.5 + index * 0.1 + extraIndex * 0.1 }}
-                      className="flex items-center gap-3 text-sm text-muted-foreground justify-center"
-                    >
-                      <Star className="w-4 h-4 text-primary flex-shrink-0" />
-                      <span>{extra}</span>
-                    </motion.div>
-                  ))}
+                <div className="flex justify-center items-center">
+                  <div className="space-y-3 flex flex-col justify-center self-center">
+                    {prize.extras.map((extra, extraIndex) => (
+                      <motion.div
+                        key={extra}
+                        initial={{ opacity: 0, x: -20 }}
+                        animate={isInView ? { opacity: 1, x: 0 } : {}}
+                        transition={{ delay: 0.5 + index * 0.1 + extraIndex * 0.1 }}
+                        className="flex items-center gap-3 text-sm text-muted-foreground justify-start"
+                      >
+                        <Star className="w-4 h-4 text-primary flex-shrink-0" />
+                        <span>{extra}</span>
+                      </motion.div>
+                    ))}
+                  </div>
                 </div>
               </motion.div>
             </motion.div>

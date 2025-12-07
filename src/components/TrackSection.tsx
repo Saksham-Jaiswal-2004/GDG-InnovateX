@@ -23,7 +23,7 @@ const TrackSection = () => {
 
   const technologies = [
     "Google Cloud", "Firebase", "TensorFlow", "Flutter", 
-    "Android", "Gemini AI", "Google Maps", "BigQuery"
+    "Android", "Gemini AI", "Google Maps", "BigQuery", "And Many More"
   ];
 
   const containerVariants = {

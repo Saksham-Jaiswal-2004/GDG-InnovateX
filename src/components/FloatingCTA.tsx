@@ -40,7 +40,7 @@ const FloatingCTA = () => {
         transition={{ delay: 1 }}
       >
         <Button variant="hero" size="lg" className="shadow-2xl animate-glow-pulse">
-          Register Now
+          <a href="https://vision.hack2skill.com/event/gdgoc-25-innovatex">Register Now</a>
         </Button>
       </motion.div>
     </div>

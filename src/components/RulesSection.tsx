@@ -9,7 +9,7 @@ const RulesSection = () => {
   const rules = [
     { text: "Projects must be created after December 1st, 2024", allowed: true },
     { text: "Mandatory use of at least one Google technology", allowed: true },
-    { text: "Team size of 1-5 members allowed", allowed: true },
+    { text: "Team size of 1-4 members allowed", allowed: true },
     { text: "All submissions must be original work", allowed: true },
     { text: "AI-assisted development is allowed, but solution must be unique", allowed: true },
     { text: "Respectful and ethical participation required", allowed: true },

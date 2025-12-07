@@ -8,7 +8,7 @@ const DetailsSection = () => {
 
   const details = [
     { icon: Globe, label: "Registration Platform", value: "Hack2Skill" },
-    { icon: Users, label: "Team Size", value: "1–5 members" },
+    { icon: Users, label: "Team Size", value: "1–4 members" },
     { icon: Award, label: "Mode", value: "Hybrid (Online + Offline)" },
     { icon: CheckCircle, label: "Mandatory Requirement", value: "Use at least one Google Tech" },
     { icon: FileCode, label: "Evaluation Stages", value: "Online → Top 10 → Offline Pitching" },

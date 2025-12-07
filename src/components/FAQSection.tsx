@@ -10,7 +10,7 @@ const FAQSection = () => {
   const faqs = [
     {
       question: "Who can participate in this hackathon?",
-      answer: "This hackathon is open to all students, developers, designers, and tech enthusiasts. Whether you're a beginner or an experienced professional, you're welcome to participate. Teams can have 1-5 members.",
+      answer: "This hackathon is open to all students, developers, designers, and tech enthusiasts. Whether you're a beginner or an experienced professional, you're welcome to participate. Teams can have 1-4 members.",
     },
     {
       question: "How do I form a team?",

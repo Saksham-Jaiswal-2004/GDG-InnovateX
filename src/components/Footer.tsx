@@ -18,7 +18,7 @@ const Footer = () => {
             <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
               <Rocket className="w-5 h-5 text-primary-foreground" />
             </div>
-            <span className="font-display font-bold text-xl gradient-text">Hackathon Name</span>
+            <span className="font-display font-bold text-xl gradient-text">GDG InnovateX</span>
           </div>
 
           {/* Quick Links */}
@@ -36,15 +36,15 @@ const Footer = () => {
 
           {/* Copyright */}
           <div className="flex items-center gap-1 text-sm text-muted-foreground">
-            <span>Made with</span>
+            <span>Organised with</span>
             <Heart className="w-4 h-4 text-accent fill-accent" />
-            <span>by the Community</span>
+            <span>by GDG on Campus, IIIT Kalyani</span>
           </div>
         </div>
 
         <div className="mt-8 pt-6 border-t border-border/30 text-center">
-          <p className="text-xs text-muted-foreground">
-            © {new Date().getFullYear()} Hackathon Name. All rights reserved.
+          <p className="text-sm text-muted-foreground">
+            © {new Date().getFullYear()} GDG InnovateX | All rights reserved
           </p>
         </div>
       </div>
