@@ -12,7 +12,7 @@ const HeroSection = () => {
     offset: ["start start", "end start"],
   });
 
-  const y = useTransform(scrollYProgress, [0, 1], [0, 200]);
+  const y = useTransform(scrollYProgress, [0, 1], [0, 400]);
   const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
   const scale = useTransform(scrollYProgress, [0, 0.5], [1, 0.9]);
 
@@ -182,7 +182,7 @@ const HeroSection = () => {
         </motion.div>
 
         {/* Scroll Indicator */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.5 }}
@@ -202,7 +202,7 @@ const HeroSection = () => {
               />
             </div>
           </motion.div>
-        </motion.div>
+        </motion.div> */}
       </motion.div>
     </section>
   );
