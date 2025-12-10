@@ -9,37 +9,37 @@ const PrizesSection = () => {
   const prizes = [
     {
       position: "1st Runner-up",
-      prize: "₹30,000",
+      // prize: "₹30,000",
       icon: Medal,
       gradient: "from-gray-200 via-gray-300 to-gray-400",
       glow: "shadow-[0_0_40px_5px_rgba(156,163,175,0.3)]",
-      extras: ["Google Swag Kit", "Career Guidance", "Certificate"],
+      extras: ["Runner up Swag Kit", "Runner up Certificate", "Other Benefits"],
       scale: false,
     },
     {
       position: "Winner",
-      prize: "₹50,000",
+      // prize: "₹50,000",
       icon: Trophy,
       gradient: "from-yellow-300 via-amber-400 to-yellow-500",
       glow: "shadow-[0_0_60px_10px_rgba(251,191,36,0.3)]",
-      extras: ["Google Swag Kit", "Mentorship Program", "Certificate of Excellence"],
+      extras: ["Winning Swag Kit", "Winner Certificate", "Other Benefits"],
       scale: true,
     },
     {
       position: "2nd Runner-up",
-      prize: "₹20,000",
+      // prize: "₹20,000",
       icon: Award,
       gradient: "from-amber-500 via-amber-600 to-amber-700",
       glow: "shadow-[0_0_40px_5px_rgba(217,119,6,0.3)]",
-      extras: ["Google Swag Kit", "Certificate", "Recognition"],
+      extras: ["Runner up Swag Kit", "Runner up Certificate", "Other Benefits"],
       scale: false,
     },
   ];
 
   const additionalPerks = [
-    { icon: Gift, text: "Exclusive swag and goodies for all participants" },
-    { icon: GraduationCap, text: "Certificates for all valid submissions" },
-    { icon: Star, text: "Mentorship opportunities with industry experts" },
+    { icon: Gift, text: "Hackathon Experience" },
+    { icon: GraduationCap, text: "Participation Certificates" },
+    { icon: Star, text: "Valuable Guidance" },
   ];
 
   const containerVariants = {

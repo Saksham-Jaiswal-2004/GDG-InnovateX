@@ -18,7 +18,7 @@ const Footer = () => {
             <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
               <Rocket className="w-5 h-5 text-primary-foreground" />
             </div>
-            <span className="font-display font-bold text-xl gradient-text">GDG InnovateX</span>
+            <span className="font-display font-bold text-xl gradient-text">InnovateX</span>
           </div>
 
           {/* Quick Links */}

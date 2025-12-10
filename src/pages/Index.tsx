@@ -31,7 +31,7 @@ const Index = () => {
         <JudgingSection />
         <RulesSection />
         <PrizesSection />
-        <MentorsSection />
+        {/* <MentorsSection /> */}
         <SponsorsSection />
         <FAQSection />
         <ContactSection />

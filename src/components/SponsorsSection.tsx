@@ -17,12 +17,7 @@ const SponsorsSection = () => {
   ];
 
   const partners = [
-    "DevCommunity",
-    "Tech University",
-    "StartupHub",
-    "CodersGuild",
-    "InnovatorsClub",
-    "TechPark",
+    "FOSS Club, IIIT Kalyani",
   ];
 
   return (
@@ -39,15 +34,16 @@ const SponsorsSection = () => {
           className="text-center mb-16"
         >
           <h2 className="section-title">
-            Sponsors & <span className="gradient-text">Partners</span>
+            {/* Sponsors &  */}
+            <span className="gradient-text">Partners</span>
           </h2>
           <p className="section-subtitle">
-            Our amazing sponsors and community partners making this possible
+            Our amazing community partners making this possible
           </p>
         </motion.div>
 
         {/* Sponsors */}
-        <div className="mb-16">
+        {/* <div className="mb-16">
           <h3 className="text-center text-lg font-semibold mb-8 text-muted-foreground">Sponsors</h3>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 max-w-5xl mx-auto">
             {sponsors.map((sponsor, index) => (
@@ -57,7 +53,7 @@ const SponsorsSection = () => {
                 animate={isInView ? { opacity: 1, scale: 1 } : {}}
                 transition={{ duration: 0.4, delay: index * 0.05 }}
                 className={`glass-card-hover p-6 flex items-center justify-center h-24 ${
-                  sponsor.tier === "platinum" ? "border-yellow-500/30" :
+                  sponsor.tier === "platinum" ? "border-blue-500/30" :
                   sponsor.tier === "gold" ? "border-amber-500/30" : "border-gray-400/30"
                 }`}
               >
@@ -65,12 +61,12 @@ const SponsorsSection = () => {
               </motion.div>
             ))}
           </div>
-        </div>
+        </div> */}
 
         {/* Community Partners */}
         <div className="mb-12">
           <h3 className="text-center text-lg font-semibold mb-8 text-muted-foreground">Community Partners</h3>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 max-w-5xl mx-auto">
+          <div className="flex flex-wrap justify-center items-center gap-4 max-w-5xl mx-auto">
             {partners.map((partner, index) => (
               <motion.div
                 key={partner}
@@ -92,10 +88,12 @@ const SponsorsSection = () => {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="text-center"
         >
+          <a href="mailto:dsc.iiitkalyani@gmail.com">
           <Button variant="outline" size="lg" className="group">
             <Handshake className="w-5 h-5" />
             Become a Sponsor / Partner
           </Button>
+          </a>
         </motion.div>
       </div>
     </section>

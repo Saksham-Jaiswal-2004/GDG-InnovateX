@@ -121,7 +121,7 @@ const Navbar = () => {
               </div>
             </motion.div>
             <span className="font-display font-bold text-xl hidden sm:block">
-              <span className="gradient-text">GDG InnovateX</span>
+              <span className="gradient-text">InnovateX</span>
             </span>
           </motion.a>
 

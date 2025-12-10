@@ -9,45 +9,27 @@ const EventsSection = () => {
 
   const events = [
     {
-      type: "Workshop",
-      title: "Getting Started with Google Cloud",
-      date: "Dec 12, 2024",
-      time: "3:00 PM IST",
+      type: "Webinar",
+      title: "Intro and Ideation Session",
+      date: "Dec 17, 2025",
+      time: "5:00 PM IST",
+      link: "",
       icon: Video,
     },
     {
-      type: "Webinar",
-      title: "Introduction to Gemini AI",
-      date: "Dec 15, 2024",
+      type: "Workshop",
+      title: "Your only guide to PPT making",
+      date: "Dec 22, 2025",
       time: "5:00 PM IST",
+      link: "",
       icon: Mic,
     },
     {
       type: "Tech Talk",
-      title: "Building with Firebase & Flutter",
-      date: "Dec 18, 2024",
-      time: "4:00 PM IST",
-      icon: Users,
-    },
-    {
-      type: "Workshop",
-      title: "TensorFlow for Beginners",
-      date: "Dec 22, 2024",
-      time: "3:00 PM IST",
-      icon: Video,
-    },
-    {
-      type: "Speaker Session",
-      title: "Innovation & Open Source",
-      date: "Dec 28, 2024",
-      time: "6:00 PM IST",
-      icon: Mic,
-    },
-    {
-      type: "AMA Session",
-      title: "Ask Me Anything with Mentors",
-      date: "Jan 2, 2025",
+      title: "Building with Google Tech",
+      date: "Dec 26, 2025",
       time: "5:00 PM IST",
+      link: "",
       icon: Users,
     },
   ];
@@ -95,10 +77,12 @@ const EventsSection = () => {
                 <Calendar className="w-4 h-4" />
                 <span>{event.date} • {event.time}</span>
               </div>
+              <a href={event.link}>
               <Button variant="outline" size="sm" className="w-full group/btn">
                 Join Session
                 <ExternalLink className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
               </Button>
+              </a>
             </motion.div>
           ))}
         </div>

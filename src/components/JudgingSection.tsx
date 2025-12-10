@@ -76,9 +76,9 @@ const JudgingSection = () => {
               className="glass-card-hover p-6 relative overflow-hidden group"
             >
               {/* Weight Badge */}
-              <div className="absolute top-4 right-4 px-2 py-1 rounded-md bg-primary/10 text-primary text-sm font-bold">
+              {/* <div className="absolute top-4 right-4 px-2 py-1 rounded-md bg-primary/10 text-primary text-sm font-bold">
                 {item.weight}
-              </div>
+              </div> */}
 
               <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                 <item.icon className="w-6 h-6 text-primary" />
