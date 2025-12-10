@@ -7,6 +7,7 @@ const Footer = () => {
     { label: "Prizes", href: "#prizes" },
     { label: "FAQ", href: "#faq" },
     { label: "Contact", href: "#contact" },
+    { label: "Handbook", href: "https://www.notion.so/InnovateX-Handbook-2c5489c63bf480b18923c28f0a944249?source=copy_link" },
   ];
 
   return (
