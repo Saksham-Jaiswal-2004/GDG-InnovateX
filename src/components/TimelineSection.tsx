@@ -127,7 +127,7 @@ const TimelineSection = () => {
                   initial={{ scale: 0 }}
                   animate={isInView ? { scale: 1 } : {}}
                   transition={{ delay: 0.3 + index * 0.15, type: "spring", stiffness: 300 }}
-                  className="absolute left-4 md:left-[49.1%] w-5 h-5 md:-translate-x-1/2 z-10"
+                  className="absolute left-2 md:left-[49.1%] w-5 h-5 md:-translate-x-1/2 z-10"
                 >
                   <div className={`w-full h-full rounded-full bg-gradient-to-br ${event.color} shadow-lg`}>
                     <motion.div
