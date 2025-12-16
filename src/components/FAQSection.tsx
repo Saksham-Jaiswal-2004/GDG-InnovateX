@@ -13,8 +13,20 @@ const FAQSection = () => {
       answer: "This hackathon is open to all students, developers, designers, and tech enthusiasts. Whether you're a beginner or an experienced professional, you're welcome to participate. Teams can have 1-4 members.",
     },
     {
+      question: "Is InnovateX only for participants who have applied for Winter of Code 5.0?",
+      answer: "No. InnovateX is open to everyone. You can participate even if you haven't applied for Winter of Code.",
+    },
+    {
+      question: "Is it mandatory to have a team of 4 members?",
+      answer: "No. You can participate solo or in a team of up to 4 members (team size: 1-4).",
+    },
+    {
       question: "How do I form a team?",
       answer: "You can register individually or with a team on Hack2Skill. If you're looking for teammates, join our Discord community where you can connect with other participants and form teams.",
+    },
+    {
+      question: "Do participants need prior hackathon experience?",
+      answer: "Not at all. InnovateX is beginner-friendly and encourages learning, innovation, and collaboration.",
     },
     {
       question: "What Google technologies can I use?",
