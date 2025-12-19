@@ -8,17 +8,15 @@ const SponsorsSection = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   const sponsors = [
-    { name: "Google Developer Groups", tier: "platinum" },
-    { name: "GDG Cloud", tier: "platinum" },
-    { name: "Women Techmakers", tier: "gold" },
-    { name: "TensorFlow User Group", tier: "gold" },
-    { name: "Flutter Community", tier: "silver" },
-    { name: "GDSC", tier: "silver" },
+    {
+      name: "Give My Certificate",
+      tier: "Certificate Partner",
+      image: "/sponsors/givemycertificate.jpg",
+      link: "https://givemycertificate.com/",
+    },
   ];
 
-  const partners = [
-    "FOSS Club, IIIT Kalyani",
-  ];
+  const partners = ["FOSS Club, IIIT Kalyani"];
 
   return (
     <section id="sponsors" className="py-20 md:py-32 relative">
@@ -43,29 +41,61 @@ const SponsorsSection = () => {
         </motion.div>
 
         {/* Sponsors */}
-        {/* <div className="mb-16">
-          <h3 className="text-center text-lg font-semibold mb-8 text-muted-foreground">Sponsors</h3>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 max-w-5xl mx-auto">
+        <div className="mb-16">
+          <h3 className="text-center text-lg font-semibold mb-8 text-muted-foreground">
+            Sponsors
+          </h3>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 max-w-7xl mx-auto">
             {sponsors.map((sponsor, index) => (
-              <motion.div
+              <motion.a
                 key={sponsor.name}
+                href={sponsor.link}
+                target="_blank"
+                rel="noopener noreferrer"
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={isInView ? { opacity: 1, scale: 1 } : {}}
                 transition={{ duration: 0.4, delay: index * 0.05 }}
-                className={`glass-card-hover p-6 flex items-center justify-center h-24 ${
-                  sponsor.tier === "platinum" ? "border-blue-500/30" :
-                  sponsor.tier === "gold" ? "border-amber-500/30" : "border-gray-400/30"
-                }`}
+                className={`glass-card-hover group relative p-4 h-48 w-48 rounded-2xl flex flex-col items-center justify-center gap-2 border
+                          ${sponsor.tier === "platinum" ? "border-blue-500/40" : sponsor.tier === "gold" ? "border-amber-500/40" : "border-gray-400/30"}`}
               >
-                <span className="font-display font-bold text-sm text-center">{sponsor.name}</span>
-              </motion.div>
+                {/* Tier Badge */}
+                <span
+                  className={`
+            absolute top-2 right-2 text-[10px] px-2 py-0.5 rounded-full uppercase tracking-wide
+            ${
+              sponsor.tier === "platinum"
+                ? "bg-blue-500/20 text-blue-400"
+                : sponsor.tier === "gold"
+                ? "bg-amber-500/20 text-amber-400"
+                : "bg-gray-500/20 text-gray-300"
+            }
+          `}
+                >
+                  {sponsor.tier}
+                </span>
+
+                {/* Logo */}
+                <img
+                  src={sponsor.image}
+                  alt={sponsor.name}
+                  className="w-20 object-contain transition-all duration-300 rounded-lg"
+                />
+
+                {/* Name */}
+                <span className="font-display font-semibold text-xs text-center text-foreground group-hover:text-primary transition">
+                  {sponsor.name}
+                </span>
+              </motion.a>
             ))}
           </div>
-        </div> */}
+        </div>
 
         {/* Community Partners */}
         <div className="mb-12">
-          <h3 className="text-center text-lg font-semibold mb-8 text-muted-foreground">Community Partners</h3>
+          <h3 className="text-center text-lg font-semibold mb-8 text-muted-foreground">
+            Community Partners
+          </h3>
           <div className="flex flex-wrap justify-center items-center gap-4 max-w-5xl mx-auto">
             {partners.map((partner, index) => (
               <motion.div
@@ -89,10 +119,10 @@ const SponsorsSection = () => {
           className="text-center"
         >
           <a href="mailto:dsc.iiitkalyani@gmail.com">
-          <Button variant="outline" size="lg" className="group">
-            <Handshake className="w-5 h-5" />
-            Become a Sponsor / Partner
-          </Button>
+            <Button variant="outline" size="lg" className="group">
+              <Handshake className="w-5 h-5" />
+              Become a Sponsor / Partner
+            </Button>
           </a>
         </motion.div>
       </div>
