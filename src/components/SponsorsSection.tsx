@@ -14,6 +14,12 @@ const SponsorsSection = () => {
       image: "/sponsors/givemycertificate.jpg",
       link: "https://givemycertificate.com/",
     },
+    {
+      name: "Keploy",
+      tier: "Silver",
+      image: "/sponsors/Keploy.png",
+      link: "https://keploy.io/",
+    },
   ];
 
   const partners = ["FOSS Club, IIIT Kalyani"];
@@ -46,7 +52,7 @@ const SponsorsSection = () => {
             Sponsors
           </h3>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 max-w-7xl mx-auto">
+          <div className="flex flex-wrap justify-center items-center gap-6 max-w-7xl mx-auto">
             {sponsors.map((sponsor, index) => (
               <motion.a
                 key={sponsor.name}
@@ -79,7 +85,7 @@ const SponsorsSection = () => {
                 <img
                   src={sponsor.image}
                   alt={sponsor.name}
-                  className="w-20 object-contain transition-all duration-300 rounded-lg"
+                  className={`${sponsor.name=="Keploy"?"w-50":"w-20"} object-contain transition-all duration-300 rounded-lg`}
                 />
 
                 {/* Name */}

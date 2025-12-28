@@ -16,7 +16,7 @@ const TimelineSection = () => {
 
   const events = [
     {
-      date: "Dec 10 - 25",
+      date: "Dec 10 - 31",
       title: "Applications & Team Formation",
       description: "Register on Hack2Skill and form your dream team",
       icon: Users,
