@@ -15,6 +15,12 @@ const SponsorsSection = () => {
       link: "https://givemycertificate.com/",
     },
     {
+      name: "OSEN",
+      tier: "Diamond",
+      image: "/sponsors/OSEN.png",
+      link: "https://keploy.io/",
+    },
+    {
       name: "Keploy",
       tier: "Silver",
       image: "/sponsors/Keploy.png",
@@ -63,7 +69,7 @@ const SponsorsSection = () => {
                 animate={isInView ? { opacity: 1, scale: 1 } : {}}
                 transition={{ duration: 0.4, delay: index * 0.05 }}
                 className={`glass-card-hover group relative p-4 h-48 w-48 rounded-2xl flex flex-col items-center justify-center gap-2 border
-                          ${sponsor.tier === "platinum" ? "border-blue-500/40" : sponsor.tier === "gold" ? "border-amber-500/40" : "border-gray-400/30"}`}
+                          ${sponsor.tier === "platinum" ? "border-blue-500/40" : sponsor.tier === "gold" ? "border-amber-500/40" : sponsor.tier === "Diamond" ? "border-purple-500/40" : "border-gray-400/30"}`}
               >
                 {/* Tier Badge */}
                 <span
@@ -72,6 +78,8 @@ const SponsorsSection = () => {
             ${
               sponsor.tier === "platinum"
                 ? "bg-blue-500/20 text-blue-400"
+                : sponsor.tier === "Diamond"
+                ? "bg-purple-500/20 text-purple-400"
                 : sponsor.tier === "gold"
                 ? "bg-amber-500/20 text-amber-400"
                 : "bg-gray-500/20 text-gray-300"
@@ -85,13 +93,13 @@ const SponsorsSection = () => {
                 <img
                   src={sponsor.image}
                   alt={sponsor.name}
-                  className={`${sponsor.name=="Keploy"?"w-50":"w-20"} object-contain transition-all duration-300 rounded-lg`}
+                  className={`${sponsor.name=="Keploy" || sponsor.name=="OSEN"?"w-50":"w-20"} object-contain transition-all duration-300 rounded-lg`}
                 />
 
                 {/* Name */}
-                <span className="font-display font-semibold text-xs text-center text-foreground group-hover:text-primary transition">
+                {/* <span className="font-display font-semibold text-xs text-center text-foreground group-hover:text-primary transition">
                   {sponsor.name}
-                </span>
+                </span> */}
               </motion.a>
             ))}
           </div>
