@@ -1,6 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { Trophy, Medal, Award, Star, Gift, GraduationCap, Sparkles } from "lucide-react";
+import { Trophy, Medal, Award, Star, Gift, GraduationCap, Sparkles, BrainCircuit } from "lucide-react";
 
 const PrizesSection = () => {
   const ref = useRef(null);
@@ -9,7 +9,7 @@ const PrizesSection = () => {
   const prizes = [
     {
       position: "1st Runner-up",
-      // prize: "₹30,000",
+      prize: "₹3,000",
       icon: Medal,
       gradient: "from-gray-200 via-gray-300 to-gray-400",
       glow: "shadow-[0_0_40px_5px_rgba(156,163,175,0.3)]",
@@ -18,7 +18,7 @@ const PrizesSection = () => {
     },
     {
       position: "Winner",
-      // prize: "₹50,000",
+      prize: "₹5,000",
       icon: Trophy,
       gradient: "from-yellow-300 via-amber-400 to-yellow-500",
       glow: "shadow-[0_0_60px_10px_rgba(251,191,36,0.3)]",
@@ -27,11 +27,20 @@ const PrizesSection = () => {
     },
     {
       position: "2nd Runner-up",
-      // prize: "₹20,000",
+      prize: "₹2,000",
       icon: Award,
       gradient: "from-amber-500 via-amber-600 to-amber-700",
       glow: "shadow-[0_0_40px_5px_rgba(217,119,6,0.3)]",
       extras: ["Runner up Swag Kit", "Runner up Certificate", "Other Benefits"],
+      scale: false,
+    },
+    {
+      position: "Best AI/ML Project",
+      prize: "₹X,XXX TBA",
+      icon: BrainCircuit,
+      gradient: "from-indigo-500 via-purple-500 to-blue-500",
+      glow: "shadow-[0_0_40px_5px_rgba(99,102,241,0.35)]",
+      extras: ["Cash Prize", "Special Track Certificate", "Other Benefits"],
       scale: false,
     },
   ];
