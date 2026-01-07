@@ -36,11 +36,11 @@ const PrizesSection = () => {
     },
     {
       position: "Best AI/ML Project",
-      prize: "₹X,XXX TBA",
+      prize: "₹2,000",
       icon: BrainCircuit,
       gradient: "from-indigo-500 via-purple-500 to-blue-500",
       glow: "shadow-[0_0_40px_5px_rgba(99,102,241,0.35)]",
-      extras: ["Cash Prize", "Special Track Certificate", "Other Benefits"],
+      extras: ["For 3 Winning Teams", "AI/ML Prize", "Special Track Certificate", "Other Benefits"],
       scale: false,
     },
   ];
