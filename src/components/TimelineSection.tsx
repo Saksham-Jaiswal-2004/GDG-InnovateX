@@ -16,35 +16,35 @@ const TimelineSection = () => {
 
   const events = [
     {
-      date: "Dec 10 - Jan 10",
+      date: "Dec 10 - Jan 15",
       title: "Applications & Team Formation",
       description: "Register on Hack2Skill and form your dream team",
       icon: Users,
       color: "from-primary to-cyan-400",
     },
     {
-      date: "Jan 15",
+      date: "Jan 20",
       title: "Online Project Submission",
       description: "Submit your completed project with all requirements",
       icon: Upload,
       color: "from-secondary to-purple-400",
     },
     {
-      date: "Jan 16",
+      date: "Jan 21",
       title: "Top 10 Announcement",
       description: "Top 10 projects selected for the final round",
       icon: Trophy,
       color: "from-amber-400 to-orange-500",
     },
     {
-      date: "Jan 16-18",
+      date: "Jan 23-25",
       title: "Offline Pitching",
       description: "Top 10 teams present their solutions to judges",
       icon: Presentation,
       color: "from-accent to-pink-400",
     },
     {
-      date: "Jan 19-20",
+      date: "Jan 25",
       title: "Winners Announced",
       description: "Top 3 winners revealed and prizes distributed",
       icon: Award,
