@@ -173,7 +173,7 @@ const HeroSection = () => {
               transition={{ duration: 3, repeat: Infinity }}
               className="text-sm text-muted-foreground mb-4 uppercase tracking-[0.2em]"
             >
-              Project Submission Deadline - January 20th
+              Project Submission Deadline - January 21st 05:30 am
             </motion.p>
             <div className="flex justify-center">
               <CountdownTimer />
