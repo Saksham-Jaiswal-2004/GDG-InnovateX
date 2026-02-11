@@ -40,7 +40,7 @@ const PrizesSection = () => {
       icon: BrainCircuit,
       gradient: "from-indigo-500 via-purple-500 to-blue-500",
       glow: "shadow-[0_0_40px_5px_rgba(99,102,241,0.35)]",
-      extras: ["For 2 Winning Teams", "AI/ML Prize", "Special Track Certificate", "Other Benefits"],
+      extras: ["For 3 Winning Teams", "AI/ML Prize", "Special Track Certificate", "Other Benefits"],
       scale: false,
     },
   ];
